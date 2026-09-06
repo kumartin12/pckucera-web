@@ -469,6 +469,9 @@
         .projekt-preview-cluster {
             background: linear-gradient(135deg, #001a0d 0%, #003320 50%, #001a0d 100%);
         }
+        .projekt-preview-chalupa {
+            background: linear-gradient(135deg, #1a1408 0%, #3d3117 50%, #1a1408 100%);
+        }
 
         .projekt-preview-overlay {
             position: absolute;
@@ -655,6 +658,41 @@
         @keyframes blink {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.2; }
+        }
+
+        /* Selská chalupa preview content */
+        .preview-chalupa-inner {
+            text-align: center;
+        }
+        .preview-chalupa-inner .chalupa-icon {
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 0 20px rgba(210,160,60,0.5));
+        }
+        .preview-chalupa-inner h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+        }
+        .preview-chalupa-inner p {
+            color: #d2a03c;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .chalupa-badge {
+            display: inline-block;
+            background: rgba(210, 160, 60, 0.15);
+            border: 1px solid rgba(210, 160, 60, 0.4);
+            color: #e6c07a;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
         }
 
         /* Project info panel */
@@ -1090,7 +1128,51 @@
                     </div>
                 </div>
 
-                <!-- 2. Číšník POS -->
+                <!-- 2. Selská chalupa Anetka -->
+                <div class="projekt-card">
+                    <div class="projekt-preview projekt-preview-chalupa">
+                        <div class="projekt-preview-overlay">
+                            <div class="browser-chrome">
+                                <div class="browser-bar">
+                                    <div class="browser-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">selskachalupaanetka.cz</div>
+                                </div>
+                                <div class="browser-body">
+                                    <div class="preview-chalupa-inner">
+                                        <span class="chalupa-icon">🏡</span>
+                                        <h3>Selská chalupa Anetka</h3>
+                                        <p>Ubytování v Českém lese</p>
+                                        <span class="chalupa-badge">Březí u Horšovského Týna · Chodsko</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projekt-info">
+                        <div class="projekt-tag">🏡 Prezentační web</div>
+                        <h3 class="projekt-name">Selská chalupa Anetka</h3>
+                        <p class="projekt-desc">
+                            Prezentační web penzionu v Českém lese u Horšovského Týna. Fotogalerie,
+                            popis pokojů, tipy na výlety po okolí a rezervace přes Booking.com
+                            i vlastní kontaktní formulář.
+                        </p>
+                        <div class="projekt-tech">
+                            <span class="tech-badge">HTML / CSS / JS</span>
+                            <span class="tech-badge">GitHub Pages</span>
+                            <span class="tech-badge">Web3Forms</span>
+                        </div>
+                        <a href="https://www.selskachalupaanetka.cz" target="_blank" rel="noopener" class="projekt-link">
+                            Navštívit web
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Číšník POS -->
                 <div class="projekt-card">
                     <div class="projekt-preview projekt-preview-cisnik">
                         <div class="projekt-preview-overlay">
@@ -1144,7 +1226,7 @@
                     </div>
                 </div>
 
-                <!-- 3. CB Cluster DX -->
+                <!-- 4. CB Cluster DX -->
                 <div class="projekt-card">
                     <div class="projekt-preview projekt-preview-cluster">
                         <div class="projekt-preview-overlay">
